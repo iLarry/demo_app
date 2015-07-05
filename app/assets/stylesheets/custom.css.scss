@@ -1,0 +1,113 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$light-gray: #777;
+
+/* 通用CSS */
+body {
+  //上内边距 60px
+  padding-top: 60px
+}
+
+section {
+  //当内容溢出边框时，自动使用滚动条
+  overflow: auto;
+}
+
+textarea {
+  //用户可调整高度
+  resize: vertical;
+}
+
+.center {
+  //居中对齐
+  text-align: center;
+  h1 {
+    //外边距底部10px
+    margin-bottom: 10px;
+  }
+}
+
+
+/* 排版的CSS */
+h1, h2, h3, h4, h5, h6 {
+  //行高
+  line-height: 1;
+}
+
+h1 {
+  //字体尺寸
+  font-size: 3em;
+  //字符间距
+  letter-spacing: -2px;
+  //底部外边距
+  margin-bottom: 30px;
+  //居中对齐
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  //字体宽度
+  font-weight: normal;
+  //白色
+  color: $light-gray;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+ /* header */
+ #logo {
+   //左侧浮动
+   float: left;
+   //有外边距
+   margin-right: 10px;
+   font-size: 1.7em;
+   color: #fff;
+   //问题全部大写
+   text-transform: uppercase;
+   letter-spacing: -1px;
+   //上内边距
+   padding-top: 9px;
+   //字体宽度
+   font-weight: bold;
+ }
+ #logo:hover {
+   color: #fff;
+   //下划线样式
+   text-decoration: none;
+ }
+
+ /*底部的CSS*/
+ footer {
+   margin-top: 45px;
+   padding-top: 5px;
+   border-top: 1p solid #eaeaea;
+   color: $light-gray;
+
+   a{
+     color: #555;
+     &:hover {
+       color: #222;
+     }
+   }
+   small {
+     float: left;
+     margin-left: 50px;
+   }
+   ul {
+     float: right;
+     list-style: none;
+     margin-right: 50px;
+     li {
+       float: left;
+       margin-left: 15px;
+     }
+   }
+ }
